@@ -3,17 +3,17 @@
             --secondary-color: #4caf50; /* Lighter Green */
             --background-color: #f1f8e9; /* Light Greenish Background */
             --surface-color: #ffffff; /* White */
-            --text-color: #263238; /* Dark Slate */
+            --text-color: #17191a; /* Dark Slate */
             --accent-color: #ffca28; /* Amber for highlights */
             --header-height: 80px;
             --sidebar-width: 300px;
         }
 
         [data-theme="dark"] {
-            --primary-color: #1b5e20; /* Darker Green */
+            --primary-color: #09690e; /* Darker Green */
             --secondary-color: #388e3c; /* Darker Secondary Green */
             --background-color: #263238; /* Dark Slate Background */
-            --surface-color: #37474f; /* Darker Surface */
+            --surface-color: #252a2d; /* Darker Surface */
             --text-color: #eceff1; /* Light Text */
             --accent-color: #ffd54f; /* Lighter Amber */
         }
