@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <aside class="sidebar">
@@ -52,9 +51,9 @@
                 <h3>Analista de Sistemas</h3>
                 <p>Instituto de Educación Superior Tecnológico Privado "Valle Grande" (2020 - 2023)</p>
             </div>
-                        <div class="education-item">
-                <h3>Administracion de Empresas</h3>
-                <p>Camara de Comercio Empresarial (2019 - 2021)</p>
+            <div class="education-item">
+                <h3>Administración de Empresas</h3>
+                <p>Cámara de Comercio Empresarial (2019 - 2021)</p>
             </div>
         </section>
 
@@ -83,7 +82,7 @@
                 <div class="habilidad">Análisis y Diseño de Sistemas</div>
                 <div class="habilidad">Bases de Datos (SQL, MySQL, Oracle Cloud)</div>
                 <div class="habilidad">Java & Python</div>
-                <div class="habilidad">HTML, CSS, JavaScript, react, vite, flutter, angular, spring boot, Dart</div>
+                <div class="habilidad">HTML, CSS, JavaScript, React, Vite, Flutter, Angular, Spring Boot, Dart</div>
                 <div class="habilidad">Metodologías Ágiles</div>
                 <div class="habilidad">Soporte Técnico</div>
                 <div class="habilidad">Git & GitHub</div>
@@ -97,7 +96,7 @@
                 <div class="card">
                     <div class="card-inner">
                         <div class="card-front">
-                            <img src="assets/paneliqueño.jpeg"  alt="Sistema de Inventario">
+                            <img src="assets/paneliqueño.jpeg" alt="Sistema de Inventario">
                             <h3>Sistema de Gestión de Inventario</h3>
                         </div>
                         <div class="card-back">
@@ -127,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                                <div class="card">
+                <div class="card">
                     <div class="card-inner">
                         <div class="card-front">
                             <img src="https://via.placeholder.com/300x180" alt="Aplicación de Tareas">
@@ -138,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                                <div class="card">
+                <div class="card">
                     <div class="card-inner">
                         <div class="card-front">
                             <img src="https://via.placeholder.com/300x180" alt="Aplicación de Tareas">
@@ -149,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                                <div class="card">
+                <div class="card">
                     <div class="card-inner">
                         <div class="card-front">
                             <img src="https://via.placeholder.com/300x180" alt="Aplicación de Tareas">
@@ -167,13 +166,15 @@
             <h2>Contáctame</h2>
             <div class="contact-container">
                 <p>Estoy disponible para colaborar en proyectos innovadores. ¡Envíame un mensaje o conéctate conmigo a través de mis redes!</p>
-                <form class="contact-form" onsubmit="return handleSubmit(event)">
+                <form class="contact-form" id="contact-form">
                     <input type="text" name="name" placeholder="Tu Nombre" required>
                     <input type="email" name="email" placeholder="Tu Email" required>
                     <input type="text" name="subject" placeholder="Asunto" required>
                     <textarea name="message" placeholder="Tu Mensaje" rows="6" required></textarea>
+                    
                     <button type="submit">Enviar Mensaje</button>
                 </form>
+                <div id="form-message" style="margin-top: 1rem;"></div>
                 <div class="contact-info">
                     <a href="mailto:luisvalle231990@gmail.com"><i class="fas fa-envelope"></i> luisvalle231990@gmail.com</a>
                     <a href="https://www.linkedin.com/in/luis-valle-coronado-50b2591ab/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -184,24 +185,27 @@
         </section>
     </main>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-content">
-            <p style="color: rgb(33, 30, 30); ">&copy; 2025 Luis Alberto Valle Coronado. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="#sobre-mi">Sobre Mí</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/in/luis-valle-coronado-50b2591ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/LuisValle79?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:luisvalle231990@gmail.com"><i class="fas fa-envelope"></i></a>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p> &copy;  2025 Luis Alberto Valle Coronado. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#sobre-mi">Sobre Mí</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/luis-valle-coronado-50b2591ab/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/LuisValle79?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:luisvalle231990@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
