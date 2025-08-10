@@ -547,6 +547,8 @@
 
         /* Footer */
 footer {
+            margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
         background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
         color: var(--surface-color);
         padding: 3rem 2rem;
@@ -628,6 +630,11 @@ footer {
                 width: 250px;
             }
 
+                footer {
+        width: 100%;
+        margin-left: 0;
+    }
+
             main, header {
                 margin-left: 250px;
                 margin-left: calc(250px + (100% - 250px - 1000px) / 2);
@@ -655,6 +662,11 @@ footer {
                 position: sticky;
                 top: 0;
             }
+
+                footer {
+        width: 100%;
+        margin-left: 0;
+    }
 
             .nav-links {
                 position: fixed;
