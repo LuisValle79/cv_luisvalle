@@ -39,6 +39,8 @@ const smoothScroll = () => {
                 document.querySelector('.burger').classList.remove('toggle');
             }
         });
+        // Deshabilita el menú contextual del clic derecho
+    document.addEventListener('contextmenu', event => event.preventDefault());
     }
 }
 
@@ -120,3 +122,7 @@ cards.forEach(card => {
         card.classList.toggle('flip');
     });
 });
+
+
+
+
