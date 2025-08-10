@@ -41,6 +41,13 @@ const smoothScroll = () => {
         });
         // Deshabilita el menú contextual del clic derecho
     document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Deshabilita Ctrl+U para ver el código fuente
+    document.addEventListener('keydown', event => {
+        if (event.ctrlKey && (event.key === 'u' || event.key === 'U')) {
+            event.preventDefault();
+        }
+    });
     }
 }
 
