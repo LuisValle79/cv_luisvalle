@@ -42,12 +42,24 @@ const smoothScroll = () => {
         // Deshabilita el menú contextual del clic derecho
     document.addEventListener('contextmenu', event => event.preventDefault());
 
-        // Deshabilita Ctrl+U para ver el código fuente
+        // Deshabilita atajos de teclado para ver el código fuente
     document.addEventListener('keydown', event => {
+        // Bloquear Ctrl+U
         if (event.ctrlKey && (event.key === 'u' || event.key === 'U')) {
             event.preventDefault();
         }
+        // Bloquear F12
+        if (event.key === 'F12') {
+            event.preventDefault();
+        }
+        // Bloquear Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && (event.key === 'i' || event.key === 'I')) {
+            event.preventDefault();
+        }
     });
+
+
+
     }
 }
 
